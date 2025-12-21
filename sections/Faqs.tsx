@@ -1,5 +1,9 @@
-import Tag from "@/components/Tag";
+"use client"
+
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+
+import Tag from "@/components/Tag";
 
 const faqs = [
   {
@@ -30,7 +34,7 @@ const faqs = [
 ];
 
 export default function Faqs() {
-  const selectedIndex = 0;
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
     <section className="py-24">
