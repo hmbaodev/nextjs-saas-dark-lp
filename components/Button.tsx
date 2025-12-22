@@ -16,7 +16,6 @@ const classes = cva("border h-12 rounded-full px-6 font-medium", {
 const Button = (
   props: {
     variant: "primary" | "secondary";
-
     size?: "sm";
   } & ButtonHTMLAttributes<HTMLButtonElement>
 ) => {
